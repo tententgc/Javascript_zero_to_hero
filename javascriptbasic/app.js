@@ -1,7 +1,10 @@
-let name; //annorunent name variable 
-name ="tentenTGC" //pick var
-let age =20
-console.log(typeof(age))
-console.log(name)
-document.write("อายุ = ",age)
-alert(" sfds")
+let age=16;
+if (age>15){
+    if (age==16){
+        console.log("m.4")
+    }else if(age = 17){
+        console.log("m.5")
+    }
+}else{
+    console.log("m.3")
+}
