@@ -1,5 +1,5 @@
 let a =["red","green","blue","white"]
 let b = ["asskad","askd","asasd",'asd']
-let x = a.concat(b)
-
+let c = ['df','dsf','sdf']
+let x = a.concat(b,c)
 console.log(x)
