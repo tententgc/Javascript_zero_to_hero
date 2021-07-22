@@ -1,10 +1,5 @@
-let age=16;
-if (age>15){
-    if (age==16){
-        console.log("m.4")
-    }else if(age = 17){
-        console.log("m.5")
-    }
-}else{
-    console.log("m.3")
-}
+let a =["red","green","blue","white"]
+let b = ["asskad","askd","asasd",'asd']
+let x = a.concat(b)
+
+console.log(x)
