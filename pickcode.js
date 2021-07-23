@@ -201,5 +201,75 @@ console.log(colors)
 
 let a =["red","green","blue","white"]
 let b = ["asskad","askd","asasd",'asd']
-let x = a.concat(b)
+let c = ['df','dsf','sdf']
+let x = a.concat(b,c)
 console.log(x)
+
+//maen is same sort b-a == more to less ,a-b == less to more
+let number =[20,100,-100,-5,25]
+number.sort(function(a,b){
+    return b-a
+})
+console.log(number)
+
+// java script object
+let product ={
+    name : "mouse",
+    price :1500,
+    color : "black",
+    category :"computer",
+    size:"M"
+};
+console.log("name of product :",product.name);
+console.log("name of price :",product.price);
+console.log("name of color :",product.color);
+
+
+let product ={
+    name : "mouse",
+    price :1500,
+    color : "black",
+    category :"computer",
+    size:"M",
+    displayproduct:function(){
+        return "name : "+product.name +' price : '+product.price +" color : "+ product.color
+    }
+};
+console.log(product.displayproduct()) 
+
+//confiam dialog 
+function deletedata(){
+    let result = confirm("you want to delete data ?")
+    let a = (result == true ?"delete data" :" not delete data")
+    console.log(a)
+}
+
+
+let a = document.getElementsByTagName('p')
+console.log(a)
+
+let a = document.getElementById('demo')
+console.log(a)
+
+//inner text edit text
+//inner HTML edit web browser 
+function displaytext(){
+    a.innerText="<strong>text js</strong>"
+    a.innerHTML="<strong>text js</strong>"
+}
+
+let a = document.getElementById('demo')
+let x=10
+let y=20
+function displaytext(){
+    a.innerHTML=  "show data  x = "+x+" show data y = "+y
+}
+
+
+// queryselectorr  mean same gerElementby ID
+let a = document.querySelector('#demo') // อ้างอิง id
+let b = document.querySelector('.myjs') // อ้างอิง class 
+let c = document.querySelector('p')// อ้างอิง variables
+console.log(a)
+console.log(b)
+console.log(c)

@@ -1,5 +1,6 @@
-let a =["red","green","blue","white"]
-let b = ["asskad","askd","asasd",'asd']
-let c = ['df','dsf','sdf']
-let x = a.concat(b,c)
-console.log(x)
+let a = document.querySelector('#demo')
+let b = document.querySelector('.myjs')
+let c = document.querySelector('p')
+console.log(a)
+console.log(b)
+console.log(c)
