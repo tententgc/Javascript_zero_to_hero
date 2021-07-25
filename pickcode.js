@@ -273,3 +273,86 @@ let c = document.querySelector('p')// อ้างอิง variables
 console.log(a)
 console.log(b)
 console.log(c)
+
+
+let titleEl = document.getElementById('title') // อ้างอิง id
+let contentEl = document.querySelector('.content') // อ้างอิง class 
+let allEl  = document.querySelector('p')// อ้างอิง variables
+function displaytext(){
+    titleEl.style.color ="red"
+    titleEl.style.backgroundColor="yellow"
+    titleEl.style.fontSize = "60px"
+
+    contentEl.setAttribute('class','kong')
+}
+
+const box = document.querySelector(".light")
+
+
+function displaytext(){
+    box.setAttribute('class','dark')
+}
+
+
+
+//     <div  class="light">
+//         <p>jsdfna;lkkkkkkkklgfklnlkdngknaslkdngandgsnaodiignaiongnangdognanfgoan</p>
+//     </div>
+
+
+//    <button onclick ="lightmode()">light mode</button>
+//    <button onclick ="darkmode()">night mode  </button>
+const box = document.querySelector(".light")
+function lightmode(){
+    box.setAttribute('class','light')
+}
+function darkmode(){
+    box.setAttribute('class','dark')
+}
+
+const textall = document.querySelectorAll('p')
+console.log(textall[0].innerHTML)
+
+
+
+const menu =document.getElementById('menu')
+function additem(){
+    const item = document.createElement('li')
+    item.innerText="item"
+    menu.appendChild(item)
+}
+function deleteitem(){
+    const item1 =document.getElementById('item-3')
+    menu.removeChild(item1)
+}
+
+
+
+
+{/* <body>
+    <div id ="box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum, est id scelerisque pulvinar, sapien velit luctus sapien, ut laoreet nunc sapien vel enim. Duis vel risus egestas, semper enim non, lobortis augue. Quisque elementum et nunc malesuada tempus. Mauris mattis in tellus eu aliquam. In porta convallis tempor. Vivamus semper volutpat mi, et auctor sem cursus sed. Cras nec eleifend libero. Phasellus vulputate pretium vestibulum. Donec vel efficitur urna. Nulla sit amet pharetra neque. In gravida nunc a nibh molestie viverra. Cras accumsan at mauris ac laoreet. Maecenas efficitur risus sed malesuada maximus. Proin dignissim viverra lacus, at iaculis mauris ullamcorper nec. Etiam elit metus, feugiat eget sem et, rutrum rhoncus turpis. Curabitur porta odio eget faucibus mollis.</p>
+    </div>
+    <button onclick ="adddarkmode()">เพิ่ม style </button>
+    <button onclick ="removedarkmode()">ลบ style </button>
+    <button onclick="switchmode()">สลับ style </button>
+   <script src ="app.js"></script>
+</body> */}
+
+const box =document.getElementById('box')
+
+function adddarkmode(){
+    box.classList.add('darkmode')
+}
+function removedarkmode(){
+    box.classList.remove('darkmode')
+}
+function switchmode(){
+    box.classList.toggle('darkmode')
+    let status = box.classList.contains("darkmode")
+    if (status){
+        box.style.color="yellow"
+    }else{
+        box.style.color= "red"
+    }
+}

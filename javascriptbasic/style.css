@@ -1,0 +1,20 @@
+.kong{
+    color:blue;
+    background : black;
+}
+
+.light{
+    background-color: orange;
+    color:black;
+}
+.dark{
+    background-color: purple;
+    color : white ;
+}
+.darkmode{
+    border: 1px ;
+    background-color: black;
+    color:aliceblue;
+    padding: 30px;
+    margin: 10px;
+}
