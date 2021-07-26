@@ -15,3 +15,30 @@ function switchmode(){
         box.style.color= "red"
     }
 }
+
+
+function welcome(){
+    alert("welcome to my web")
+}
+
+function highlight(obj){
+    obj.style.color="red"
+    obj.style.background="blue"
+}
+
+function unhighlight(obj){
+    obj.style.background="black"
+}
+
+function getmenu(){
+    const menu = document.getElementById("menu")
+    console.log(menu.value)
+}
+
+function highlight(obj){
+    obj.style.background="yellow"
+}
+
+function unhighlight(obj){
+    obj.style.background="red"
+}

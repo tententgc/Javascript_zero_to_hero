@@ -356,3 +356,58 @@ function switchmode(){
         box.style.color= "red"
     }
 }
+
+
+
+// <body onload="welcome()"></body>
+function welcome(){
+    alert("welcome to my web")
+}
+
+
+    // <label for= "">name</label>
+    // <input type="text" placeholder="put yourname" onfocus= "highlight(this)" onblur="unhighlight(this)">
+
+function highlight(obj){
+    obj.style.color="red"
+    obj.style.background="blue"
+}
+
+function unhighlight(obj){
+    obj.style.background="black"
+}
+
+
+    // <label for="">select your advent</label>
+    // <select name ="" id ="menu" onchange ="getmenu()">
+    //     <option value ="javascript">javascript</option>
+    //     <option value ="python">python</option>
+    //     <option value ="bootstarp">bootstarp</option>
+    // </select>
+    
+function highlight(obj){
+    obj.style.color="red"
+    obj.style.background="blue"
+}
+
+function unhighlight(obj){
+    obj.style.background="black"
+}
+
+function getmenu(){
+    const menu = document.getElementById("menu")
+    console.log(menu.value)
+}
+
+
+
+
+
+// <a href="" onmouseover="highlight(this)" onmouseout="unhighlight(this)">Menu</a>
+ function highlight(obj){
+    obj.style.background="yellow"
+}
+
+function unhighlight(obj){
+    obj.style.background="red"
+}
